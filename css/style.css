@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Raleway:wght@500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Courgette&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Crete+Round:ital@1&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Crete+Round:ital@1&family=Open+Sans:wght@300;500;700&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -893,9 +894,6 @@ fieldset {
     margin-top: 10px; }
   .join .inner table textarea#comments {
     width: 100%; } }
-body {
-  background: #ffd803; }
-
 /* header -------------------------------------*/
 #header {
   width: 100%;
@@ -916,7 +914,7 @@ body {
       #header .inner > h1 a {
         display: block;
         text-align: center;
-        font: bold 30px/100px 'Raleway';
+        font: bold 30px/100px 'Open Sans';
         color: #ffd803; }
     #header .inner .menuWeb {
       width: 70%; }
@@ -928,7 +926,7 @@ body {
         justify-content: space-between; }
         #header .inner .menuWeb #gnb li a {
           display: block;
-          font: bold 14px/80px 'Raleway';
+          font: bold 14px/80px 'Open Sans';
           color: #fffffe; }
         #header .inner .menuWeb #gnb li:hover a {
           color: #272343; }
@@ -1000,7 +998,7 @@ body {
         padding: 25px 20px 26px 20px; }
         #header .inner .menuMo h1 a {
           display: block;
-          font: bold 24px/1 'Raleway';
+          font: bold 24px/1 'Open Sans';
           color: #393834; }
         #header .inner .menuMo h1 span {
           display: block;
@@ -1023,7 +1021,7 @@ body {
             color: #fafafa;
             text-align: center;
             border-radius: 50%;
-            font: 25px/50px 'arial';
+            font: 25px/50px 'Open Sans';
             margin-right: 20px; }
           #header .inner .menuMo .moMenuList .login .utilMo {
             display: flex;
@@ -1033,7 +1031,7 @@ body {
               display: inline-block; }
               #header .inner .menuMo .moMenuList .login .utilMo li a {
                 display: block;
-                font: 16px/1 'Raleway';
+                font: 16px/1 'Open Sans';
                 color: #aaa; }
               #header .inner .menuMo .moMenuList .login .utilMo li:nth-of-type(1) {
                 position: relative;
@@ -1041,7 +1039,7 @@ body {
                 #header .inner .menuMo .moMenuList .login .utilMo li:nth-of-type(1)::after {
                   content: '|';
                   display: block;
-                  font: 16px/1 'Raleway';
+                  font: 16px/1 'Open Sans';
                   color: #aaa;
                   position: absolute;
                   top: 0;
@@ -1053,7 +1051,7 @@ body {
           width: 100%;
           padding: 16px 0px;
           border-top: 1px solid #bbb;
-          font: 14px/1 "Raleway";
+          font: 14px/1 "Open Sans";
           color: #aaa;
           text-align: center; }
         #header .inner .menuMo .moMenuList #gnbMo li:hover a {
@@ -1071,7 +1069,7 @@ body {
             justify-content: center;
             width: 90px;
             height: 80px;
-            font: 14px/1 "Raleway";
+            font: 14px/1 "Open Sans";
             color: #aaa;
             text-align: center;
             border-right: 1px solid #bbb;
@@ -1088,7 +1086,7 @@ body {
         width: 270px;
         margin-top: 40px; }
         #header .inner .menuMo .follow h3 {
-          font: bold 14px/1 "Raleway";
+          font: bold 14px/1 "Open Sans";
           color: #888;
           text-align: center;
           margin-bottom: 20px; }
@@ -1102,7 +1100,7 @@ body {
             width: 50px;
             height: 50px;
             border-radius: 50%;
-            font: bold 20px/50px "Raleway";
+            font: bold 20px/50px "Open Sans";
             color: #fafafa;
             text-align: center;
             background: rgba(0, 0, 0, 0.3); }
@@ -1112,7 +1110,8 @@ body {
   width: 100%;
   height: calc(100vh - 100px);
   position: relative;
-  overflow: hidden; }
+  overflow: hidden;
+  background: #ffd803; }
   #visual .imgBox {
     width: 80%;
     height: 100%;
@@ -1158,6 +1157,22 @@ body {
     background-color: rgba(255, 217, 3, 0.7);
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
     z-index: 3; }
+    #visual .floatingBox .btnMore {
+      display: block;
+      width: 200px;
+      height: 60px;
+      text-align: center;
+      font-size: 14px;
+      line-height: 60px;
+      font-family: "Open Sans";
+      color: #fffffe;
+      background: #ffd803;
+      box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+      cursor: pointer;
+      position: absolute;
+      bottom: -30px;
+      left: 50%;
+      transform: translateX(-50%); }
     #visual .floatingBox .txtBox {
       position: absolute;
       top: 0;
@@ -1168,26 +1183,15 @@ body {
       padding: 40px 60px;
       vertical-align: middle; }
       #visual .floatingBox .txtBox h1 {
-        font: bold 30px/1.4 'arial';
+        font: bold 30px/1.4 'Open Sans';
         margin-bottom: 10px;
-        color: #272343; }
+        color: #272343;
+        background: linear-gradient(to top, rgba(255, 216, 3, 0.5) 10px, transparent 10px);
+        display: inline; }
       #visual .floatingBox .txtBox p {
-        font: 14px/1.4 'arial';
+        font: 14px/1.4 'Open Sans';
         color: #ccc;
         flex-wrap: wrap; }
-    #visual .floatingBox .btnMore {
-      display: block;
-      width: 40%;
-      height: 60px;
-      text-align: center;
-      font: 14px/60px 'arial';
-      color: #fffffe;
-      background: #ffd803;
-      position: absolute;
-      bottom: -30px;
-      left: 50%;
-      transform: translateX(-50%);
-      box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3); }
   #visual .sns {
     position: absolute;
     bottom: 5%;
@@ -1207,63 +1211,56 @@ body {
   padding: 100px 0; }
   #our .inner {
     width: 1180px;
-    margin: 0 auto; }
-    #our .inner .wrap {
-      width: 100%; }
-      #our .inner .wrap article {
-        position: relative;
-        width: 360px;
-        float: left;
-        margin-right: 40px; }
-        #our .inner .wrap article:hover span {
-          font: bold 70px/1 'Raleway';
-          color: #c6aa92;
-          transition: 1s; }
-        #our .inner .wrap article:hover .btnMore::after {
-          content: '';
-          display: block;
-          background-color: #c6aa92;
-          width: 310px;
-          height: 1px;
-          position: absolute;
-          top: 50%;
-          left: 120%;
-          transition: 1s; }
-        #our .inner .wrap article:last-child {
-          margin-right: 0px; }
-        #our .inner .wrap article h2 {
-          margin-bottom: 10px; }
-          #our .inner .wrap article h2 a {
-            font: bold 22px/16px 'Courgette';
-            color: #393834; }
-        #our .inner .wrap article span {
-          position: absolute;
-          top: 0;
-          right: 0;
-          font: bold 50px/1 'Raleway';
-          color: #d6d6d6;
-          transition: 1s; }
-        #our .inner .wrap article p {
-          text-align: right;
-          width: 100%;
-          height: 100px;
-          font: 16px/1.4 'Raleway';
-          color: #393834;
-          margin-bottom: 10px; }
-        #our .inner .wrap article .btnMore {
-          font: bold 14px/1 'Raleway';
-          color: #c6aa92;
-          position: relative; }
-          #our .inner .wrap article .btnMore::after {
-            content: '';
-            display: block;
-            background-color: #c6aa92;
-            width: 20px;
-            height: 1px;
-            position: absolute;
-            top: 50%;
-            left: 120%;
-            transition: 1s; }
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; }
+    #our .inner article {
+      position: relative;
+      width: 300px;
+      text-align: center;
+      padding: 10px;
+      transition: 1s; }
+      #our .inner article:hover {
+        box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.02);
+        cursor: pointer;
+        transition: 1s; }
+      #our .inner article:nth-of-type(1) {
+        box-shadow: none;
+        text-align: left;
+        padding: none; }
+        #our .inner article:nth-of-type(1) > p {
+          font: 16px/1.2 'Open Sans';
+          color: #bfbfbf;
+          margin: 20px 0 40px; }
+      #our .inner article h2 {
+        font: bold 24px/1 'Open Sans';
+        color: #777777;
+        background: linear-gradient(to top, rgba(255, 216, 3, 0.5) 10px, transparent 10px);
+        display: inline; }
+      #our .inner article h3 {
+        font: bold 16px/1 'Open Sans';
+        color: #777777; }
+      #our .inner article > i {
+        font-size: 30px;
+        color: #ffd803;
+        margin: 20px 0; }
+      #our .inner article p {
+        font: 12px/1.4 'Open Sans';
+        color: #bfbfbf;
+        margin: 20px 0 40px; }
+      #our .inner article .btnMore {
+        display: block;
+        width: 200px;
+        height: 60px;
+        text-align: center;
+        font-size: 14px;
+        line-height: 60px;
+        font-family: "Open Sans";
+        color: #fffffe;
+        background: #ffd803;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+        cursor: pointer; }
 
 /* banner -------------------------------------------*/
 #banner {
@@ -1277,12 +1274,12 @@ body {
     margin: 0 auto;
     text-align: center; }
     #banner .inner h1 {
-      font: 45px/1 'Raleway';
+      font: 45px/1 'Open Sans';
       color: #fafafa;
       text-shadow: 3px 3px 5px #ccc;
       margin-bottom: 20px; }
     #banner .inner p {
-      font: 16px/1.3 'Raleway';
+      font: 16px/1.3 'Open Sans';
       color: #fafafa;
       text-align: center; }
     #banner .inner .bannerBtn {
@@ -1366,7 +1363,7 @@ body {
             top: 0;
             left: 0;
             color: #c6aa92;
-            font: 30px/236px 'arial';
+            font: 30px/236px 'Open Sans';
             opacity: 0;
             transition: 0.5s; }
           #project .inner .wrap article a img {
@@ -1483,7 +1480,7 @@ body {
       right: 0;
       top: 15px; }
       #news .inner > span a {
-        font: normal 14px/1 'arial';
+        font: normal 14px/1 'Open Sans';
         color: #c6aa92; }
     #news .inner article {
       position: relative;
@@ -1508,10 +1505,10 @@ body {
       #news .inner article h2 {
         margin-bottom: 30px; }
         #news .inner article h2 a {
-          font: bold 30px/1 'Raleway';
+          font: bold 30px/1 'Open Sans';
           color: #393834; }
       #news .inner article .date {
-        font: bold 16px/1 'Raleway';
+        font: bold 16px/1 'Open Sans';
         color: #c6aa92; }
         #news .inner article .date::after {
           content: '';
@@ -1524,7 +1521,7 @@ body {
       #news .inner article p {
         width: 100%;
         height: 100px;
-        font: 16px/1.4 'arial';
+        font: 16px/1.4 'Open Sans';
         color: #ccc;
         margin: 20px 0 10px 0; }
       #news .inner article .btn {
@@ -1567,12 +1564,12 @@ body {
         #footer .inner .footMenu article:nth-of-type(1) {
           border-left: none; }
         #footer .inner .footMenu article h2 {
-          font: 20px/1 'Raleway';
+          font: 20px/1 'Open Sans';
           color: #c6aa92;
           margin-bottom: 20px; }
         #footer .inner .footMenu article ul li,
         #footer .inner .footMenu article p {
-          font: 14px/1.5 'Raleway';
+          font: 14px/1.5 'Open Sans';
           color: #fafafa;
           word-break: break-all; }
   #footer .subscribe {
@@ -1580,7 +1577,7 @@ body {
     margin-bottom: 50px;
     position: relative; }
     #footer .subscribe h2 {
-      font: 20px/1 'Raleway';
+      font: 20px/1 'Open Sans';
       color: #fafafa;
       margin-bottom: 20px; }
     #footer .subscribe form {
@@ -1615,7 +1612,7 @@ body {
       align-items: center;
       justify-content: space-between; }
       #footer .copy .inner p {
-        font: 12px/1 'Raleway';
+        font: 12px/1 'Open Sans';
         color: #fafafa;
         width: 100%; }
       #footer .copy .inner ul {
@@ -1625,7 +1622,7 @@ body {
         #footer .copy .inner ul li {
           margin-right: 20px; }
           #footer .copy .inner ul li a {
-            font: 14px/1 'Raleway';
+            font: 14px/1 'Open Sans';
             color: #fafafa; }
 
 /* tablet --------------------------------------------------------------------*/
@@ -1665,7 +1662,7 @@ body {
         margin: 0 auto;
         width: 400px;
         height: 40px;
-        font: 16px/40px 'Raleway'; }
+        font: 16px/40px 'Open Sans'; }
   #visual .swiper .swiper-pagination {
     display: none; }
   #visual .swiper .swiper-button-prev {
@@ -1674,7 +1671,7 @@ body {
     width: 60px;
     height: 60px;
     color: #fafafa;
-    font: 25px/60px 'arial'; }
+    font: 25px/60px 'Open Sans'; }
   #visual .swiper .swiper-button-next {
     display: block;
     position: absolute;
@@ -1683,7 +1680,7 @@ body {
     width: 60px;
     height: 60px;
     color: #fafafa;
-    font: 25px/60px 'arial'; }
+    font: 25px/60px 'Open Sans'; }
 
   /* our ------------------------------------------- */
   #our .inner {
@@ -1838,21 +1835,21 @@ body {
 @media screen and (max-width: 539px) {
   /* visual -------------------------------------------- */
   #visual .swiper .swiper-wrapper .swiper-slide .inner .txtBox h1 {
-    font: bold 40px/1 'Courgette';
+    font: bold 40px/1 'Open Sans';
     color: #fff;
     margin-top: 10px;
     margin-bottom: 40px; }
   #visual .swiper .swiper-wrapper .swiper-slide .inner .txtBox h2 {
-    font: 20px/1 'Raleway';
+    font: 20px/1 'Open Sans';
     color: #fff; }
   #visual .swiper .swiper-wrapper .swiper-slide .inner .txtBox p {
-    font: 14px/1.4 'Raleway';
+    font: 14px/1.4 'Open Sans';
     width: 80%;
     margin: 0 auto; }
   #visual .swiper .swiper-wrapper .swiper-slide .inner .txtBox a {
     width: 100px;
     height: 30px;
-    font: 12px/30px 'Raleway';
+    font: 12px/30px 'Open Sans';
     margin-top: 60px; }
 
   /* our ------------------------------------------- */

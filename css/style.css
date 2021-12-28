@@ -1167,12 +1167,14 @@ fieldset {
       font-family: "Open Sans";
       color: #fffffe;
       background: #ffd803;
-      box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
-      cursor: pointer;
+      transition: 1s;
       position: absolute;
       bottom: -30px;
       left: 50%;
       transform: translateX(-50%); }
+      #visual .floatingBox .btnMore:hover {
+        transition: 1s;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3); }
     #visual .floatingBox .txtBox {
       position: absolute;
       top: 0;
@@ -1222,7 +1224,7 @@ fieldset {
       padding: 10px;
       transition: 1s; }
       #our .inner article:hover {
-        box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.02);
+        box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.03);
         cursor: pointer;
         transition: 1s; }
       #our .inner article:nth-of-type(1) {
@@ -1259,8 +1261,10 @@ fieldset {
         font-family: "Open Sans";
         color: #fffffe;
         background: #ffd803;
-        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
-        cursor: pointer; }
+        transition: 1s; }
+        #our .inner article .btnMore:hover {
+          transition: 1s;
+          box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3); }
 
 /* banner -------------------------------------------*/
 #banner {

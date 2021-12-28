@@ -341,8 +341,8 @@ $mobile : 539px;
          content:'' ;
          width: 100%;
          height: 100%;
-         background: #fffffe;
-         opacity: 0.3;
+         background: rgb(155, 155, 155);
+         opacity: 0.1;
          position: absolute;
          top: 0;
          left: 0;
@@ -470,7 +470,7 @@ $mobile : 539px;
             font:bold 16px/1 'Open Sans'; 
             color:#777777;
          }
-         i{
+         >i{
            @include icon();
          }
          p{ 
@@ -495,7 +495,8 @@ $mobile : 539px;
    .imgBox{
       width: 60vw;
       height: 100%;
-      background: url(../img/aboutBg.jpg) no-repeat center/cover;
+      background:url(../img/aboutBg.jpg) no-repeat center/cover;
+      filter: grayscale(70%);
       position: absolute;
       top: 0;
       left :0;
@@ -601,70 +602,94 @@ $mobile : 539px;
 
       h1{
          @include txtBg();
+         
       }
       .wrap{
          width: 100%;
          display:flex;
-         align-items: center;
+         align-items: top;
          justify-content: space-between;
+         margin-top: 40px;
          article{
-            width: 100vw;
+            width: 20vw;
             transition: 1s;
             ul{
                li{
-                  font:14px/1 'Open Sans'; 
-                  color:#777;
-                  margin-top: 10px;
-                     }
+                  margin-bottom: 40px;
+                  line-height: 0;
+                  a{
+                     font:14px/1 'Open Sans'; 
+                     color:#777;
+                  }
+               }
             }
             &:nth-of-type(1){
-               .sns{
+               ul{
                   width: 100%;
-                  ul{
-                     display: flex;
-                     align-items: center;
-                     justify-content:left;
-                     li{
-                        margin-right: 20px;
-                        a{
-                           display: block;
-                           width: 30px;
-                           height: 30px;
-                           border-radius: 50%;
-                           background: #ffd803;
-                           text-align: center;
-                           i{
-                              font-size: 16px;
-                              line-height: 30px;
-                              color: #fff;
-                              
+                  li{
+                     margin-bottom: 40px;
+                     font:14px/1 'Open Sans'; 
+                     color:#777;
+                     &:last-child{
+                        margin-bottom: 0;
+                        .sns{
+                           width: 100%;
+                           ul{
+                              display: flex;
+                              justify-content:left;
+                              li{
+                                 margin-right: 20px;
+                                 margin-bottom: 0;
+                                 a{
+                                    display: block;
+                                    width: 30px;
+                                    height: 30px;
+                                    border-radius: 50%;
+                                    background: #ffd803;
+                                    text-align: center;
+                                    i{
+                                       font-size: 16px;
+                                       line-height: 30px;
+                                       color: #fff;
+                                       
+                                    }
+                                 }
+                              }
                            }
                         }
                      }
                   }
                }
+               
             }
-            .btns{
-               display: flex;
-               justify-content: space-around;
-               align-items: center;
-               .btnMore{
-                  @include btnMore();
+            &:last-child{
+               span{
+                  display: block;
+                  margin-bottom: 20px;
+                  font:14px/1 'Open Sans'; 
+                  color:#777;
+                  text-align: right;
                }
-               .btnUp{
-                  @include btnMore($wd:60px);
+               address{
+                  margin-bottom: 40px;
+                  font:14px/1 'Open Sans'; 
+                  color:#777;
+                  text-align: right;
+               }
+               .btns{
+                  display: flex;
+                  justify-content: right;
+                  align-items: center;
+                  .btnMore{
+                     @include btnMore();
+                  }
+                  .btnUp{
+                     @include btnMore($wd:60px);
+                     margin-left: 20px;
+                  }
                }
             }
             
-            span{
-               display: block;
-               @include txtBg();   
-            }
-            h2{
-               font:14px/1 'Open Sans'; 
-               color:#777;
-               margin-top: 10px;
-            }
          }
       }   
       }
@@ -675,41 +700,15 @@ $mobile : 539px;
 /* footer ------------------------------------*/ 
 #footer{
    width:100%; 
-   padding:100px 0; 
-   background:#393834;
-   position: relative;
-
+   padding:20px 0; 
    .inner{
       width:1180px; 
       margin:0 auto; 
-      .footMenu{
-         width: 100%;
-         display: flex;
-         align-items: center;
-         justify-content: space-between;
-         padding-bottom: 50px;
-         article{
-            width: 30%;
-            height: 100px;
-            border-left: 1px solid rgb(119, 119, 119);
-            padding-left:50px;
-            &:nth-of-type(1){
-               border-left: none;
-            }
-            h2{
-               font:20px/1 'Open Sans'; 
-               color:#c6aa92; 
-               margin-bottom: 20px;
-            }
-            ul li,
-            p{
-               font:14px/1.5 'Open Sans'; 
-               color:#fafafa; 
-               word-break: break-all;
-            }
-         }
-      }
-      
+      text-align: center;
+      p{
+         font: 14px/1 'Open Sans'; 
+         color:#777;
+      }      
    }
 
    .subscribe{
